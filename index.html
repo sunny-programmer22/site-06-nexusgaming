@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusGaming - Game Reviews, Esports & Mod Downloads</title>
+    <meta name="description" content="NexusGaming is your home for authoritative AAA and indie game reviews, live esports scores, verified PC mod downloads, and competitive gaming tournaments.">
+    <meta name="keywords" content="gaming reviews, esports scores, game mods download, PC mods, gaming tournaments, Black Myth Wukong, Cyberpunk mods, HilltopAds gaming">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20width=%22100%22%20height=%22100%22><text y=%22.9em%22 font-size=%2290%22>🎮</text></svg>">
+    
+    <!-- Cyber Theme Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ====================================================================
+         TOP STATUS BAR
+         ==================================================================== -->
+    <div class="top-status-bar">
+        <div class="container status-bar-content">
+            <div class="status-left">
+                <span class="status-pill">
+                    <span class="live-dot"></span>
+                    <span>SERVER NODES: <strong>ONLINE (12ms)</strong></span>
+                </span>
+                <span class="status-pill">
+                    <span class="discord-badge">👾 DISCORD:</span> <strong>52,480 GAMERS ACTIVE</strong>
+                </span>
+            </div>
+            <div class="status-right">
+                <span class="status-pill">
+                    <span>LATEST PATCH: <strong>CYBERPUNK 2.3 ULTRA</strong></span>
+                </span>
+                <span class="status-pill">
+                    <span>TOURNAMENT POOL: <strong>$57,500 LIVE</strong></span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================================================================
+         HEADER & NAVIGATION BAR
+         ==================================================================== -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="nav-logo" title="NexusGaming Network Home">
+                <div class="logo-symbol">N</div>
+                <div class="logo-text">NEXUS<span>GAMING</span></div>
+            </a>
+
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#reviews" class="nav-link active">Reviews</a></li>
+                    <li><a href="#esports" class="nav-link">Esports</a></li>
+                    <li><a href="#highlights" class="nav-link">Highlights</a></li>
+                    <li><a href="#mods" class="nav-link">Mod Vault</a></li>
+                    <li><a href="#tournaments" class="nav-link">Tournaments</a></li>
+                    <li><a href="#benchmarks" class="nav-link">Hardware</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="nav-search-bar">
+                    <input type="text" class="nav-search-input" placeholder="Search mods, games..." aria-label="Search">
+                    <span class="nav-search-icon">🔍</span>
+                </div>
+                <a href="#mods" class="btn-cyber-primary">
+                    <span>⚡ Upload Mod</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ====================================================================
+         ESPORTS LIVE SCORE TICKER
+         ==================================================================== -->
+    <section class="esports-ticker-wrap" id="esports" aria-label="Esports Live Scores">
+        <div class="ticker-label-badge">
+            <span class="live-dot dot-red"></span>
+            <span>LIVE MATCHES</span>
+        </div>
+        <div class="ticker-track">
+            <!-- CS2 -->
+            <div class="ticker-match-item">
+                <span class="game-icon-tag">CS2</span>
+                <div class="team-score-block">
+                    <span class="team-name">FaZe Clan</span>
+                    <span class="score-num">1</span>
+                    <span class="score-sep">-</span>
+                    <span class="score-num">1</span>
+                    <span class="team-name">Natus Vincere</span>
+                </div>
+                <span class="match-status-badge status-live">Map 3 Decider</span>
+            </div>
+
+            <!-- Valorant -->
+            <div class="ticker-match-item">
+                <span class="game-icon-tag">VALORANT</span>
+                <div class="team-score-block">
+                    <span class="team-name">Sentinels</span>
+                    <span class="score-num">2</span>
+                    <span class="score-sep">-</span>
+                    <span class="score-num">0</span>
+                    <span class="team-name">Fnatic</span>
+                </div>
+                <span class="match-status-badge status-final">FINAL (Ascent)</span>
+            </div>
+
+            <!-- League of Legends -->
+            <div class="ticker-match-item">
+                <span class="game-icon-tag">LOL</span>
+                <div class="team-score-block">
+                    <span class="team-name">T1</span>
+                    <span class="score-num">1</span>
+                    <span class="score-sep">-</span>
+                    <span class="score-num">0</span>
+                    <span class="team-name">Gen.G</span>
+                </div>
+                <span class="match-status-badge status-live">Game 2 (Baron 28m)</span>
+            </div>
+
+            <!-- Dota 2 -->
+            <div class="ticker-match-item">
+                <span class="game-icon-tag">DOTA 2</span>
+                <div class="team-score-block">
+                    <span class="team-name">Team Spirit</span>
+                    <span class="score-num">vs</span>
+                    <span class="team-name">Gaimin Gladiators</span>
+                </div>
+                <span class="match-status-badge status-upcoming">TODAY 19:00 UTC</span>
+            </div>
+
+            <!-- Rocket League -->
+            <div class="ticker-match-item">
+                <span class="game-icon-tag">RLCS</span>
+                <div class="team-score-block">
+                    <span class="team-name">Team Vitality</span>
+                    <span class="score-num">3</span>
+                    <span class="score-sep">-</span>
+                    <span class="score-num">2</span>
+                    <span class="team-name">Karmine Corp</span>
+                </div>
+                <span class="match-status-badge status-live">OT Game 6</span>
+            </div>
+
+            <!-- Apex Legends -->
+            <div class="ticker-match-item">
+                <span class="game-icon-tag">APEX</span>
+                <div class="team-score-block">
+                    <span class="team-name">DarkZero (Match Point)</span>
+                    <span class="score-num">108 pts</span>
+                </div>
+                <span class="match-status-badge status-live">Round 6</span>
+            </div>
+
+            <!-- Duplicate items for seamless continuous looping -->
+            <div class="ticker-match-item">
+                <span class="game-icon-tag">CS2</span>
+                <div class="team-score-block">
+                    <span class="team-name">FaZe Clan</span>
+                    <span class="score-num">1</span>
+                    <span class="score-sep">-</span>
+                    <span class="score-num">1</span>
+                    <span class="team-name">Natus Vincere</span>
+                </div>
+                <span class="match-status-badge status-live">Map 3 Decider</span>
+            </div>
+            <div class="ticker-match-item">
+                <span class="game-icon-tag">VALORANT</span>
+                <div class="team-score-block">
+                    <span class="team-name">Sentinels</span>
+                    <span class="score-num">2</span>
+                    <span class="score-sep">-</span>
+                    <span class="score-num">0</span>
+                    <span class="team-name">Fnatic</span>
+                </div>
+                <span class="match-status-badge status-final">FINAL</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================================================
+         ZONE 3: TOP LEADERBOARD AD SLOT (728x90 MULTITAG BANNER)
+         ==================================================================== -->
+    <div class="container ad-slot-leaderboard-wrapper">
+        <div class="cyber-ad-frame">
+            <!-- HilltopAds MultiTag 728x90 Slot Target -->
+            <div id="ad-slot-zone3-top-leaderboard" class="banner-728x90-container" data-ad-zone="zone3-top-banner">
+                <!-- Fallback / Script injected via ads-config.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================================================================
+         MAIN CONTENT AREA
+         ==================================================================== -->
+    <main class="container">
+
+        <!-- ================================================================
+             HERO SPOTLIGHT REVIEW
+             ================================================================ -->
+        <section class="hero-spotlight">
+            <div class="hero-card">
+                <div class="hero-media-cover">
+                    <div class="hero-media-content">
+                        <div class="hero-badges-row">
+                            <span class="badge-spotlight">⚡ GAME OF THE YEAR CONTENDER</span>
+                            <span class="badge-platform">PC • PS5 • XBOX SERIES X</span>
+                            <span class="badge-platform">RTX PATH TRACING</span>
+                        </div>
+                        <h1 class="hero-title">Cyberpunk 2077: <span>Phantom Liberty & Patch 2.3</span></h1>
+                        <p class="hero-excerpt">
+                            CD Projekt Red completes the ultimate redemption story. Dogtown delivers espionage thriller mastery, groundbreaking cyberware mechanics, and unmatched ray tracing spectacle.
+                        </p>
+                        <div class="hero-cta-group">
+                            <a href="#reviews" class="btn-cyber-primary">Read Deep Dive Review</a>
+                            <a href="#highlights" class="btn-cyber-outline">Watch 4K Gameplay Benchmark</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-stats-panel">
+                    <div class="review-score-hero">
+                        <div class="score-badge-hexagon">
+                            <span class="score-val">9.8</span>
+                            <span class="score-max">/ 10</span>
+                        </div>
+                        <div>
+                            <div class="score-verdict-title">MASTERPIECE</div>
+                            <div class="score-verdict-subtitle">NexusGaming Editorial Choice Award</div>
+                        </div>
+                    </div>
+
+                    <div class="metric-bars-group">
+                        <div class="metric-bar-item">
+                            <div class="metric-header">
+                                <span>Visuals & Path Tracing</span>
+                                <strong>10/10</strong>
+                            </div>
+                            <div class="metric-progress">
+                                <div class="metric-fill" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="metric-bar-item">
+                            <div class="metric-header">
+                                <span>Espionage Narrative & Acting</span>
+                                <strong>9.9/10</strong>
+                            </div>
+                            <div class="metric-progress">
+                                <div class="metric-fill" style="width: 99%;"></div>
+                            </div>
+                        </div>
+                        <div class="metric-bar-item">
+                            <div class="metric-header">
+                                <span>Combat & Build Diversity</span>
+                                <strong>9.6/10</strong>
+                            </div>
+                            <div class="metric-progress">
+                                <div class="metric-fill" style="width: 96%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-pros-cons">
+                        <div class="pro-item">
+                            <span>+</span>
+                            <span>Idris Elba delivers phenomenal Solomon Reed performance</span>
+                        </div>
+                        <div class="pro-item">
+                            <span>+</span>
+                            <span>Dogtown is the densest, most atmospheric district in RPG history</span>
+                        </div>
+                        <div class="con-item">
+                            <span>-</span>
+                            <span>Requires RTX 4080+ for full path tracing 60+ FPS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             GAMEPLAY HIGHLIGHTS & ZONE 6 VIDEO VAST PLAYER
+             ================================================================ -->
+        <section class="section-highlights-player" id="highlights">
+            <div class="section-head">
+                <div>
+                    <h2 class="section-title">Gameplay Highlights & Match Clips</h2>
+                    <p class="section-subtitle">Ultra HD 60 FPS esports clutch moments and next-gen RTX tech showcases.</p>
+                </div>
+                <span class="status-pill">
+                    <span class="live-dot"></span>
+                    <span>VAST AD ENABLED (ZONE 6)</span>
+                </span>
+            </div>
+
+            <div class="video-showcase-grid">
+                <!-- Main HTML5 Video Player Frame with HilltopAds VAST Integration -->
+                <div class="player-frame-box" id="nexus-video-player-container">
+                    
+                    <!-- HTML5 Video Stream -->
+                    <video id="gameplay-video-player" class="main-gameplay-video" poster="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80" preload="metadata" playsinline>
+                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                        Your browser does not support high definition HTML5 video.
+                    </video>
+
+                    <!-- HilltopAds Zone 6 Video VAST Preroll Overlay -->
+                    <div id="vast-ad-overlay" class="vast-overlay vast-hidden">
+                        <div class="vast-top-bar">
+                            <span class="vast-zone-badge">⚡ SPONSOR ADVERTISEMENT • HILLTOPADS ZONE 6 VAST</span>
+                            <div class="vast-countdown-box">
+                                Ad will play video in: <strong id="vast-timer-count">15s</strong>
+                            </div>
+                        </div>
+
+                        <div class="vast-center-content">
+                            <div class="vast-brand-icon">🛡️</div>
+                            <h3 class="vast-ad-title">Next-Gen Quantum Antivirus & Game Booster</h3>
+                            <p class="vast-ad-desc">
+                                Eliminate ping spikes, unlock hidden GPU frames, and protect your Steam inventory with AI security shields.
+                            </p>
+                        </div>
+
+                        <div class="vast-bottom-bar">
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="vast-learn-more-btn" id="vast-learn-more">
+                                Visit Sponsor / Learn More &rarr;
+                            </a>
+                            <button class="vast-skip-btn" id="vast-skip-button" disabled>
+                                Skip in 5s
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Custom Player Controls Bar -->
+                    <div class="custom-player-controls">
+                        <button class="btn-ctrl-play" id="btn-video-play-pause" title="Play or Pause Gameplay Video">▶</button>
+                        <div class="player-clip-title" id="current-clip-title">S1mple 1v4 Deagle Ace Clutch - Grand Finals Decider</div>
+                        <span class="player-quality-pill">4K HDR • 60 FPS</span>
+                    </div>
+                </div>
+
+                <!-- Playlist Selector Sidebar -->
+                <div class="clips-playlist-col">
+                    <div class="playlist-header">FEATURED CLIPS PLAYLIST</div>
+                    
+                    <div class="playlist-item active" data-clip-src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" data-clip-name="S1mple 1v4 Deagle Ace Clutch - Grand Finals">
+                        <div class="clip-thumb">
+                            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=160&q=80" alt="CS2 Clutch">
+                        </div>
+                        <div class="clip-info">
+                            <div class="clip-name">CS2 Major: 1v4 Deagle Ace</div>
+                            <div class="clip-meta">FaZe vs NaVi • 1.4M Views</div>
+                        </div>
+                    </div>
+
+                    <div class="playlist-item" data-clip-src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" data-clip-name="TenZ 1v3 Match-Winning Sheriff Flick">
+                        <div class="clip-thumb">
+                            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=160&q=80" alt="Valorant Flick">
+                        </div>
+                        <div class="clip-info">
+                            <div class="clip-name">TenZ Insane Sheriff Flick</div>
+                            <div class="clip-meta">Sentinels vs Fnatic • 920K Views</div>
+                        </div>
+                    </div>
+
+                    <div class="playlist-item" data-clip-src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" data-clip-name="Elden Ring Shadow of the Erdtree: Consort Radahn No-Hit">
+                        <div class="clip-thumb">
+                            <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=160&q=80" alt="Elden Ring Boss">
+                        </div>
+                        <div class="clip-info">
+                            <div class="clip-name">Elden Ring DLC No-Hit Run</div>
+                            <div class="clip-meta">Level 1 Wretch • 680K Views</div>
+                        </div>
+                    </div>
+
+                    <div class="playlist-item" data-clip-src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4" data-clip-name="Black Myth: Wukong Erlang Shen Secret Boss Fight">
+                        <div class="clip-thumb">
+                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=160&q=80" alt="Wukong Boss Fight">
+                        </div>
+                        <div class="clip-info">
+                            <div class="clip-name">Wukong: Erlang Shen Boss</div>
+                            <div class="clip-meta">Full Parry Guide • 510K Views</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             LATEST AAA & INDIE GAME REVIEWS
+             ================================================================ -->
+        <section class="section-reviews" id="reviews">
+            <div class="section-head">
+                <div>
+                    <h2 class="section-title">Critical Game Reviews</h2>
+                    <p class="section-subtitle">Deep dive benchmarking, mechanics analysis, and zero-compromise verdicts.</p>
+                </div>
+                <div class="filter-tabs-row">
+                    <button class="filter-tab active" data-filter="all">All Reviews</button>
+                    <button class="filter-tab" data-filter="aaa">AAA Blockbusters</button>
+                    <button class="filter-tab" data-filter="indie">Indie Hall of Fame</button>
+                    <button class="filter-tab" data-filter="early">Early Access</button>
+                </div>
+            </div>
+
+            <div class="reviews-grid">
+                <!-- Review 1: Black Myth: Wukong -->
+                <article class="review-card" data-category="aaa">
+                    <div class="review-card-cover">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" alt="Black Myth: Wukong Cover">
+                        <span class="score-badge-corner score-epic">9.5</span>
+                    </div>
+                    <div class="review-card-body">
+                        <div class="review-meta-pills">
+                            <span class="pill-genre">Action RPG</span>
+                            <span class="badge-platform">Unreal Engine 5</span>
+                        </div>
+                        <h3 class="review-card-title">Black Myth: Wukong</h3>
+                        <p class="review-card-summary">
+                            Game Science delivers a monumental cultural tour de force. Astonishing boss battles, breathtaking mythological environments, and satisfying transformation combat.
+                        </p>
+                        <div class="review-card-footer">
+                            <span class="review-author">Reviewed by Alex Mercer</span>
+                            <a href="#highlights" class="link-read-more">Read Review &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Review 2: Elden Ring Shadow of the Erdtree -->
+                <article class="review-card" data-category="aaa">
+                    <div class="review-card-cover">
+                        <img src="https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=800&q=80" alt="Elden Ring Erdtree Cover">
+                        <span class="score-badge-corner">9.7</span>
+                    </div>
+                    <div class="review-card-body">
+                        <div class="review-meta-pills">
+                            <span class="pill-genre">Souls-like</span>
+                            <span class="badge-platform">PC • PS5 • Xbox</span>
+                        </div>
+                        <h3 class="review-card-title">Elden Ring: Shadow of the Erdtree</h3>
+                        <p class="review-card-summary">
+                            FromSoftware crafts an expansion larger than most standalone games. The Land of Shadow is vertical map design at its absolute pinnacle with punishing, rewarding encounters.
+                        </p>
+                        <div class="review-card-footer">
+                            <span class="review-author">Reviewed by Sarah Vance</span>
+                            <a href="#highlights" class="link-read-more">Read Review &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Review 3: Hades II -->
+                <article class="review-card" data-category="indie">
+                    <div class="review-card-cover">
+                        <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80" alt="Hades II Cover">
+                        <span class="score-badge-corner">9.6</span>
+                    </div>
+                    <div class="review-card-body">
+                        <div class="review-meta-pills">
+                            <span class="pill-genre">Roguelite</span>
+                            <span class="badge-platform">Supergiant Games</span>
+                        </div>
+                        <h3 class="review-card-title">Hades II</h3>
+                        <p class="review-card-summary">
+                            Melinoë's journey to slay Chronos builds brilliantly upon the god-tier foundation of the original. More spellcraft, deeper narrative branches, and legendary music by Darren Korb.
+                        </p>
+                        <div class="review-card-footer">
+                            <span class="review-author">Reviewed by Leo Torres</span>
+                            <a href="#highlights" class="link-read-more">Read Review &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Review 4: Helldivers 2 -->
+                <article class="review-card" data-category="aaa">
+                    <div class="review-card-cover">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80" alt="Helldivers 2 Cover">
+                        <span class="score-badge-corner score-epic">9.1</span>
+                    </div>
+                    <div class="review-card-body">
+                        <div class="review-meta-pills">
+                            <span class="pill-genre">Co-Op Shooter</span>
+                            <span class="badge-platform">Arrowhead Studios</span>
+                        </div>
+                        <h3 class="review-card-title">Helldivers 2</h3>
+                        <p class="review-card-summary">
+                            Pure, unadulterated chaotic co-op perfection. Friendly fire hilarity, cinematic orbital strikes, and the galactic war meta make spreading Managed Democracy unforgettable.
+                        </p>
+                        <div class="review-card-footer">
+                            <span class="review-author">Reviewed by Marcus Flint</span>
+                            <a href="#highlights" class="link-read-more">Read Review &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Review 5: Hollow Knight Silksong Preview -->
+                <article class="review-card" data-category="indie">
+                    <div class="review-card-cover">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Hollow Knight Silksong Preview">
+                        <span class="score-badge-corner">ANTICIPATED</span>
+                    </div>
+                    <div class="review-card-body">
+                        <div class="review-meta-pills">
+                            <span class="pill-genre">Metroidvania</span>
+                            <span class="badge-platform">Team Cherry</span>
+                        </div>
+                        <h3 class="review-card-title">Hollow Knight: Silksong</h3>
+                        <p class="review-card-summary">
+                            Hands-on preview with Hornet's agile aerial acrobatic moveset. Pharloom is vast, mysterious, and possesses lethal craftable traps that redefine the genre's rhythm.
+                        </p>
+                        <div class="review-card-footer">
+                            <span class="review-author">Reviewed by Elena Rostova</span>
+                            <a href="#highlights" class="link-read-more">Read Preview &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Review 6: Manor Lords -->
+                <article class="review-card" data-category="early">
+                    <div class="review-card-cover">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80" alt="Manor Lords Cover">
+                        <span class="score-badge-corner score-epic">9.0</span>
+                    </div>
+                    <div class="review-card-body">
+                        <div class="review-meta-pills">
+                            <span class="pill-genre">Strategy / Sim</span>
+                            <span class="badge-platform">Slavic Magic</span>
+                        </div>
+                        <h3 class="review-card-title">Manor Lords</h3>
+                        <p class="review-card-summary">
+                            Solo developer Slavic Magic crafts a medieval city builder that rivals triple-A giants. Gridless organic road networks paired with tactical Total War style skirmishes.
+                        </p>
+                        <div class="review-card-footer">
+                            <span class="review-author">Reviewed by David Kim</span>
+                            <a href="#highlights" class="link-read-more">Read Review &rarr;</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             TWO-COLUMN GRID: MOD VAULT & TOURNAMENTS vs SIDEBAR (300x250)
+             ================================================================ -->
+        <div class="main-two-col-grid">
+            
+            <!-- LEFT MAIN COLUMN -->
+            <div class="left-main-column">
+                
+                <!-- TOP MODS DOWNLOAD LIST (ZONE 5 SMARTLINK ATTACHED) -->
+                <section class="mod-vault-container" id="mods">
+                    <div class="section-head">
+                        <div>
+                            <h2 class="section-title">Nexus Mod Vault</h2>
+                            <p class="section-subtitle">Verified high-performance graphics packs, total conversions & gameplay overhauls.</p>
+                        </div>
+                        <span class="badge-verified-safe">🛡️ ALL MODS VIRUSTOTAL VERIFIED</span>
+                    </div>
+
+                    <div class="mod-table-list">
+                        <!-- Mod 1 -->
+                        <div class="mod-row-card">
+                            <div class="mod-icon-wrapper">🚀</div>
+                            <div class="mod-details">
+                                <div class="mod-name-row">
+                                    <span class="mod-name">Cyberpunk 2077 - HD Reworked Project Ultra</span>
+                                    <span class="badge-game-tag">Cyberpunk 2077</span>
+                                    <span class="badge-verified-safe">PATCH 2.3 READY</span>
+                                </div>
+                                <div class="mod-specs-row">
+                                    <span>Version: <strong>v2.4</strong></span>
+                                    <span>Size: <strong>14.2 GB</strong></span>
+                                    <span>Downloads: <strong>482,109</strong></span>
+                                    <span>Rating: <strong>★ 4.9/5</strong></span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-download-mod" data-mod-title="Cyberpunk 2077 HD Reworked Ultra" data-mod-version="v2.4">
+                                <span>📥 Download Mod</span>
+                            </a>
+                        </div>
+
+                        <!-- Mod 2 -->
+                        <div class="mod-row-card">
+                            <div class="mod-icon-wrapper">⚔️</div>
+                            <div class="mod-details">
+                                <div class="mod-name-row">
+                                    <span class="mod-name">Elden Ring - Seamless Co-Op Deluxe</span>
+                                    <span class="badge-game-tag">Elden Ring</span>
+                                    <span class="badge-verified-safe">DLC COMPATIBLE</span>
+                                </div>
+                                <div class="mod-specs-row">
+                                    <span>Version: <strong>v1.8.2</strong></span>
+                                    <span>Size: <strong>48 MB</strong></span>
+                                    <span>Downloads: <strong>1,290,440</strong></span>
+                                    <span>Rating: <strong>★ 5.0/5</strong></span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-download-mod" data-mod-title="Elden Ring Seamless Co-Op Deluxe" data-mod-version="v1.8.2">
+                                <span>📥 Download Mod</span>
+                            </a>
+                        </div>
+
+                        <!-- Mod 3 -->
+                        <div class="mod-row-card">
+                            <div class="mod-icon-wrapper">✨</div>
+                            <div class="mod-details">
+                                <div class="mod-name-row">
+                                    <span class="mod-name">Skyrim Special Edition - Community Shaders 2026</span>
+                                    <span class="badge-game-tag">Skyrim SE</span>
+                                    <span class="badge-verified-safe">ZERO FPS DROP</span>
+                                </div>
+                                <div class="mod-specs-row">
+                                    <span>Version: <strong>v3.1</strong></span>
+                                    <span>Size: <strong>210 MB</strong></span>
+                                    <span>Downloads: <strong>812,045</strong></span>
+                                    <span>Rating: <strong>★ 4.8/5</strong></span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-download-mod" data-mod-title="Skyrim Community Shaders 2026" data-mod-version="v3.1">
+                                <span>📥 Download Mod</span>
+                            </a>
+                        </div>
+
+                        <!-- Mod 4 -->
+                        <div class="mod-row-card">
+                            <div class="mod-icon-wrapper">🔮</div>
+                            <div class="mod-details">
+                                <div class="mod-name-row">
+                                    <span class="mod-name">Baldur's Gate 3 - 5e Spells & Expansion Arsenal</span>
+                                    <span class="badge-game-tag">Baldur's Gate 3</span>
+                                    <span class="badge-verified-safe">PATCH 7 TESTED</span>
+                                </div>
+                                <div class="mod-specs-row">
+                                    <span>Version: <strong>v4.0</strong></span>
+                                    <span>Size: <strong>68 MB</strong></span>
+                                    <span>Downloads: <strong>640,119</strong></span>
+                                    <span>Rating: <strong>★ 4.9/5</strong></span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-download-mod" data-mod-title="Baldurs Gate 3 5e Spells Arsenal" data-mod-version="v4.0">
+                                <span>📥 Download Mod</span>
+                            </a>
+                        </div>
+
+                        <!-- Mod 5 -->
+                        <div class="mod-row-card">
+                            <div class="mod-icon-wrapper">🏎️</div>
+                            <div class="mod-details">
+                                <div class="mod-name-row">
+                                    <span class="mod-name">GTA V - VisualV Next-Gen RTX Edition</span>
+                                    <span class="badge-game-tag">GTA V</span>
+                                    <span class="badge-verified-safe">FIVE-M READY</span>
+                                </div>
+                                <div class="mod-specs-row">
+                                    <span>Version: <strong>v5.6</strong></span>
+                                    <span>Size: <strong>8.4 GB</strong></span>
+                                    <span>Downloads: <strong>2,100,500</strong></span>
+                                    <span>Rating: <strong>★ 4.9/5</strong></span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-download-mod" data-mod-title="GTA V VisualV Next-Gen RTX" data-mod-version="v5.6">
+                                <span>📥 Download Mod</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- COMMUNITY TOURNAMENT ANNOUNCEMENTS (ZONE 5 SMARTLINK ATTACHED) -->
+                <section class="tournaments-container" id="tournaments">
+                    <div class="section-head">
+                        <div>
+                            <h2 class="section-title">Community Tournament Brackets</h2>
+                            <p class="section-subtitle">Compete for cash bounties, hardware prizes, and glory in open ladder tournaments.</p>
+                        </div>
+                        <span class="status-pill">
+                            <span class="live-dot"></span>
+                            <span>REGISTRATION OPEN</span>
+                        </span>
+                    </div>
+
+                    <div class="tournaments-grid">
+                        <!-- Tournament 1 -->
+                        <div class="tourney-card">
+                            <div>
+                                <div class="tourney-top-meta">
+                                    <span class="badge-game-tag">VALORANT 5v5</span>
+                                    <span class="tourney-prize-badge">$15,000 PRIZE POOL</span>
+                                </div>
+                                <h3 class="tourney-title">Nexus Winter Valorant Invitational</h3>
+                                <div class="tourney-meta-list">
+                                    <span>Format: <strong>Single Elimination (Bo3)</strong></span>
+                                    <span>Server: <strong>North America & EU Central</strong></span>
+                                    <span>Slots Remaining: <strong>14 / 64 Teams</strong></span>
+                                    <span>Start Date: <strong>November 12, 2026</strong></span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-join-tournament" data-tourney-name="Nexus Winter Valorant Invitational" data-tourney-prize="$15,000">
+                                <span>🏆 Join Tournament Ladder</span>
+                            </a>
+                        </div>
+
+                        <!-- Tournament 2 -->
+                        <div class="tourney-card">
+                            <div>
+                                <div class="tourney-top-meta">
+                                    <span class="badge-game-tag">APEX LEGENDS</span>
+                                    <span class="tourney-prize-badge">$10,000 PRIZE POOL</span>
+                                </div>
+                                <h3 class="tourney-title">Apex Legends Cyber-Clash Trios</h3>
+                                <div class="tourney-meta-list">
+                                    <span>Format: <strong>6-Match Custom Lobby Points</strong></span>
+                                    <span>Server: <strong>Global Mixed (100 Ping Cap)</strong></span>
+                                    <span>Slots Remaining: <strong>8 / 20 Squads</strong></span>
+                                    <span>Start Date: <strong>November 19, 2026</strong></span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-join-tournament" data-tourney-name="Apex Legends Cyber-Clash Trios" data-tourney-prize="$10,000">
+                                <span>🏆 Join Tournament Ladder</span>
+                            </a>
+                        </div>
+
+                        <!-- Tournament 3 -->
+                        <div class="tourney-card">
+                            <div>
+                                <div class="tourney-top-meta">
+                                    <span class="badge-game-tag">COUNTER-STRIKE 2</span>
+                                    <span class="tourney-prize-badge">$25,000 PRIZE POOL</span>
+                                </div>
+                                <h3 class="tourney-title">CS2 Cyber-Brawl Major Open</h3>
+                                <div class="tourney-meta-list">
+                                    <span>Format: <strong>128-Team Open Swiss System</strong></span>
+                                    <span>Server: <strong>128-Tick Nexus Pro Servers</strong></span>
+                                    <span>Slots Remaining: <strong>32 / 128 Teams</strong></span>
+                                    <span>Start Date: <strong>December 01, 2026</strong></span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-join-tournament" data-tourney-name="CS2 Cyber-Brawl Major Open" data-tourney-prize="$25,000">
+                                <span>🏆 Join Tournament Ladder</span>
+                            </a>
+                        </div>
+
+                        <!-- Tournament 4 -->
+                        <div class="tourney-card">
+                            <div>
+                                <div class="tourney-top-meta">
+                                    <span class="badge-game-tag">ROCKET LEAGUE</span>
+                                    <span class="tourney-prize-badge">$7,500 PRIZE POOL</span>
+                                </div>
+                                <h3 class="tourney-title">Rocket League 3v3 Speed Masters</h3>
+                                <div class="tourney-meta-list">
+                                    <span>Format: <strong>Double Elimination Bracket</strong></span>
+                                    <span>Server: <strong>NA East / US Central</strong></span>
+                                    <span>Slots Remaining: <strong>6 / 32 Teams</strong></span>
+                                    <span>Start Date: <strong>December 10, 2026</strong></span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-join-tournament" data-tourney-name="Rocket League Speed Masters" data-tourney-prize="$7,500">
+                                <span>🏆 Join Tournament Ladder</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- RIGHT SIDEBAR COLUMN -->
+            <aside class="sidebar-column">
+                
+                <!-- ZONE 3: 300x250 SIDEBAR MULTITAG BANNER SLOT -->
+                <div class="sidebar-ad-card">
+                    <div id="ad-slot-zone3-sidebar-300x250" class="banner-300x250-container" data-ad-zone="zone3-sidebar-banner">
+                        <!-- Fallback / Script injected via ads-config.js -->
+                    </div>
+                </div>
+
+                <!-- HARDWARE BENCHMARKS & FPS RADAR WIDGET -->
+                <div class="sidebar-widget" id="benchmarks">
+                    <h3 class="widget-title"><span>⚡</span> GPU Benchmark Index (4K Ultra)</h3>
+                    <div class="gpu-bench-list">
+                        <div class="gpu-bench-item">
+                            <div class="gpu-row-header">
+                                <span>GeForce RTX 5090 (32GB)</span>
+                                <span class="gpu-fps-num">148 FPS AVG</span>
+                            </div>
+                            <div class="gpu-bar-track">
+                                <div class="gpu-bar-fill fill-rtx5090"></div>
+                            </div>
+                        </div>
+
+                        <div class="gpu-bench-item">
+                            <div class="gpu-row-header">
+                                <span>GeForce RTX 4090 (24GB)</span>
+                                <span class="gpu-fps-num">108 FPS AVG</span>
+                            </div>
+                            <div class="gpu-bar-track">
+                                <div class="gpu-bar-fill fill-rtx4090"></div>
+                            </div>
+                        </div>
+
+                        <div class="gpu-bench-item">
+                            <div class="gpu-row-header">
+                                <span>Radeon RX 7900 XTX (24GB)</span>
+                                <span class="gpu-fps-num">92 FPS AVG</span>
+                            </div>
+                            <div class="gpu-bar-track">
+                                <div class="gpu-bar-fill fill-rx7900"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DISCORD & COMMUNITY HUB -->
+                <div class="discord-widget-box">
+                    <div class="discord-icon-big">👾</div>
+                    <h3 class="discord-widget-title">Join Nexus Discord</h3>
+                    <p class="discord-widget-desc">Chat with 50,000+ PC modders, esports analysts, and scrimmage team finders.</p>
+                    <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="btn-join-discord">
+                        Connect on Discord &rarr;
+                    </a>
+                </div>
+
+                <!-- TOP PICKS / TRENDING EDITORIALS -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title"><span>🔥</span> Editor's Must-Play</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="#reviews">» Best 10 Cyberpunk 2077 Mods to Install in 2026</a></li>
+                        <li><a href="#reviews">» Counter-Strike 2 Smoke & Flash Lineups for Mirage</a></li>
+                        <li><a href="#reviews">» Steam Deck OLED Optimization Guide for AAA Games</a></li>
+                        <li><a href="#reviews">» Top 5 Wireless Esports Mice Tested by Pros</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- ====================================================================
+         ZONE 2: IN-PAGE PUSH (IPP) MULTITAG NOTIFICATION CONTAINER
+         ==================================================================== -->
+    <div id="ad-slot-zone2-ipp"></div>
+
+    <!-- ====================================================================
+         ZONE 4: VIDEO SLIDER MULTITAG CONTAINER
+         ==================================================================== -->
+    <div id="ad-slot-zone4-video-slider"></div>
+
+    <!-- ====================================================================
+         FOOTER
+         ==================================================================== -->
+    <footer class="nexus-footer">
+        <div class="container">
+            <div class="footer-top-grid">
+                <div class="footer-brand">
+                    <div class="nav-logo">
+                        <div class="logo-symbol">N</div>
+                        <div class="logo-text">NEXUS<span>GAMING</span></div>
+                    </div>
+                    <p>
+                        The epicenter of modern esports analytics, critical game reviews, and elite PC mod downloads. Built by gamers, for gamers worldwide.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="social-link-icon" title="Discord">👾</a>
+                        <a href="https://twitch.tv" target="_blank" rel="noopener noreferrer" class="social-link-icon" title="Twitch">🎮</a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link-icon" title="YouTube">📺</a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link-icon" title="X / Twitter">🐦</a>
+                        <a href="https://steamcommunity.com" target="_blank" rel="noopener noreferrer" class="social-link-icon" title="Steam">🕹️</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Navigation</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#reviews">Game Reviews</a></li>
+                        <li><a href="#esports">Live Esports Scores</a></li>
+                        <li><a href="#highlights">Gameplay Highlights</a></li>
+                        <li><a href="#mods">Top Mod Downloads</a></li>
+                        <li><a href="#tournaments">Tournament Brackets</a></li>
+                        <li><a href="#benchmarks">Hardware Benchmarks</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-col-title">Mod Categories</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#mods">Graphics Overhauls</a></li>
+                        <li><a href="#mods">Total Conversions</a></li>
+                        <li><a href="#mods">Co-Op & Multiplayer Addons</a></li>
+                        <li><a href="#mods">UI & Quality of Life</a></li>
+                        <li><a href="#mods">RTX & Ray Tracing Shaders</a></li>
+                        <li><a href="#mods">Mod Submission Guidelines</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-newsletter-box">
+                    <h4 class="footer-col-title">Mod & Esports Intel</h4>
+                    <p class="footer-newsletter-desc">Subscribe to receive weekly curated mod drops, tournament invites, and hardware benchmark alerts.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to NexusGaming Intel alerts!');">
+                        <input type="email" class="newsletter-input" placeholder="gamertag@domain.com" required>
+                        <button type="submit" class="btn-newsletter">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- HilltopAds Partner Disclosure -->
+            <div class="footer-disclaimer-card">
+                <strong>Advertising & Affiliate Disclosure:</strong> NexusGaming integrates certified high-performance advertising networks, including HilltopAds MultiTag banners, Popunder interstitial services, In-Page Push notifications, and Video VAST preroll streams. All downloaded mod archives are scanned against multi-engine antivirus definitions to guarantee community safety.
+            </div>
+
+            <div class="footer-bottom-bar">
+                <div>&copy; 2026 NexusGaming Network. All trademarks, game logos, and brand names are property of their respective owners.</div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">DMCA Takedown</a>
+                    <a href="#">HilltopAds Partner Info</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive UI Scripts -->
+    <script>
+        // Tab Filtering for Game Reviews
+        const filterTabs = document.querySelectorAll('.filter-tab');
+        const reviewCards = document.querySelectorAll('.review-card');
+
+        filterTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                filterTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                const filter = tab.getAttribute('data-filter');
+                reviewCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Playlist Switcher for Gameplay Video Highlights
+        const playlistItems = document.querySelectorAll('.playlist-item');
+        const gameplayVideo = document.getElementById('gameplay-video-player');
+        const clipTitleEl = document.getElementById('current-clip-title');
+
+        playlistItems.forEach(item => {
+            item.addEventListener('click', () => {
+                playlistItems.forEach(p => p.classList.remove('active'));
+                item.classList.add('active');
+
+                const src = item.getAttribute('data-clip-src');
+                const title = item.getAttribute('data-clip-name');
+
+                if (gameplayVideo && src) {
+                    gameplayVideo.src = src;
+                    clipTitleEl.textContent = title;
+                    // Reset VAST ad overlay status if user wants to play next video
+                    const playBtn = document.getElementById('btn-video-play-pause');
+                    if (playBtn) playBtn.innerHTML = '▶';
+                }
+            });
+        });
+    </script>
+
+    <!-- HilltopAds Multi-Zone Unified Engine -->
+    <script src="ads-config.js"></script>
+</body>
+</html>
