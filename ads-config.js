@@ -1,4 +1,4 @@
-/**
+﻿/**
  * NexusGaming - HilltopAds Unified Integration Engine
  * Configuration & Placement Handlers for All HilltopAds Zones:
  * 
@@ -38,9 +38,9 @@ const HILLTOP_CONFIG = {
         displayDelayMs: 2500, // Show notification after 2.5s of page exploration
         autoHideSeconds: 16,
         data: {
-            title: "⚡ Exclusive Mod Dropped: RTX 5090 Ultra Shaders",
+            title: "âš¡ Exclusive Mod Dropped: RTX 5090 Ultra Shaders",
             body: "Cyberpunk & GTA V HD Photorealism pack 2026 is now live. Free download mirror ready!",
-            icon: "🎮",
+            icon: "ðŸŽ®",
             badge: "COMMUNITY HOT",
             ctaText: "Get Mod Mirror",
             targetUrl: "https://go.nexusgaming.net/sl/ipp-mods?utm_source=hilltop&zone=2"
@@ -98,7 +98,7 @@ const HILLTOP_CONFIG = {
     zone6_vast: {
         enabled: true,
         zoneId: "HT_ZONE_VAST_6006",
-        vastTagUrl: "https://vast.hilltopads.net/vast.xml?zone=6006_VAST_GAMING",
+        vastTagUrl: "https://faithfuloccasion.com/dumgF/z.d/GKNwvtZtG/UC/ge/mQ9KuHZBU-lwkjP/T_ce1QNsD/Qs5vMVD/UntRNDznUJ0xNnDtkPwBOgQe",
         skipOffsetSeconds: 5,
         totalAdDuration: 15,
         clickThroughUrl: "https://go.nexusgaming.net/sl/vast-ad-click?utm_source=hilltop&zone=6_vast"
@@ -304,12 +304,12 @@ function initZone3Banners() {
             // High-aesthetic cyber placeholder banner
             topSlot.innerHTML = `
                 <div class="cyber-banner-inner banner-728x90">
-                    <div class="banner-tag">SPONSORED ADVERTISEMENT • HILLTOPADS ZONE 3 MULTITAG (728x90)</div>
+                    <div class="banner-tag">SPONSORED ADVERTISEMENT â€¢ HILLTOPADS ZONE 3 MULTITAG (728x90)</div>
                     <div class="banner-content">
-                        <div class="banner-icon">⚡</div>
+                        <div class="banner-icon">âš¡</div>
                         <div class="banner-text">
                             <span class="banner-headline">ULTRA-LOW LATENCY CLOUD GAMING RIGS</span>
-                            <span class="banner-subline">Play Next-Gen Ray Tracing Titles Anywhere at 240 FPS • Instant Free Trial</span>
+                            <span class="banner-subline">Play Next-Gen Ray Tracing Titles Anywhere at 240 FPS â€¢ Instant Free Trial</span>
                         </div>
                         <a href="${HILLTOP_CONFIG.zone5_directLink.defaultUrl}" target="_blank" rel="noopener noreferrer" class="banner-cta-btn">
                             CLAIM ACCESS &rarr;
@@ -337,7 +337,7 @@ function initZone3Banners() {
                     <div class="banner-300-body">
                         <div class="banner-badge">PRO GAMER GEAR 2026</div>
                         <div class="banner-300-art">
-                            <span class="gear-icon">🎧</span>
+                            <span class="gear-icon">ðŸŽ§</span>
                             <span class="gear-pulse"></span>
                         </div>
                         <h4 class="banner-300-title">Quantum V9 Wireless 7.1 Headset</h4>
@@ -385,15 +385,15 @@ function initZone4VideoSlider() {
         container.innerHTML = `
             <div class="video-slider-box" id="slider-box-card">
                 <div class="slider-header">
-                    <span class="slider-badge"><span class="live-dot"></span> AD • HILLTOPADS VIDEO SLIDER</span>
+                    <span class="slider-badge"><span class="live-dot"></span> AD â€¢ HILLTOPADS VIDEO SLIDER</span>
                     <div class="slider-ctrls">
-                        <button class="slider-min-btn" id="slider-min-btn" title="Minimize">−</button>
+                        <button class="slider-min-btn" id="slider-min-btn" title="Minimize">âˆ’</button>
                         <button class="slider-close-btn" id="slider-close-btn" title="Close">&times;</button>
                     </div>
                 </div>
                 <div class="slider-video-wrapper" id="slider-media-body">
                     <div class="slider-video-poster">
-                        <div class="slider-play-indicator">▶</div>
+                        <div class="slider-play-indicator">â–¶</div>
                         <div class="slider-video-title">Next-Gen Mech Warfare Tournament</div>
                         <div class="slider-sponsor-tag">Sponsor Spotlight</div>
                     </div>
@@ -430,7 +430,7 @@ function initZone4VideoSlider() {
                 const box = document.getElementById('slider-box-card');
                 if (box) {
                     box.classList.toggle('slider-minimized');
-                    minBtn.textContent = box.classList.contains('slider-minimized') ? '+' : '−';
+                    minBtn.textContent = box.classList.contains('slider-minimized') ? '+' : 'âˆ’';
                 }
             });
         }
@@ -635,7 +635,7 @@ function initZone6VideoVAST() {
                 vastSkipBtn.classList.remove('skip-ready');
             } else {
                 vastSkipBtn.disabled = false;
-                vastSkipBtn.textContent = `Skip Ad ⏭`;
+                vastSkipBtn.textContent = `Skip Ad â­`;
                 vastSkipBtn.classList.add('skip-ready');
             }
         }
@@ -654,10 +654,10 @@ function initZone6VideoVAST() {
 
     function playActualVideo() {
         video.play().then(() => {
-            if (playBtn) playBtn.innerHTML = '❚❚';
+            if (playBtn) playBtn.innerHTML = 'âšâš';
         }).catch(err => {
             logAd('Zone 6', 'Autoplay prevented by browser, waiting for user trigger', err);
-            if (playBtn) playBtn.innerHTML = '▶';
+            if (playBtn) playBtn.innerHTML = 'â–¶';
         });
     }
 
@@ -688,10 +688,10 @@ function initZone6VideoVAST() {
             } else {
                 if (video.paused) {
                     video.play();
-                    playBtn.innerHTML = '❚❚';
+                    playBtn.innerHTML = 'âšâš';
                 } else {
                     video.pause();
-                    playBtn.innerHTML = '▶';
+                    playBtn.innerHTML = 'â–¶';
                 }
             }
         });
@@ -743,3 +743,4 @@ window.NexusHilltopAds = {
     initZone5SmartLink,
     initZone6VideoVAST
 };
+
